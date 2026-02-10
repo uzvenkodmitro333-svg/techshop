@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to TechShop</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#order-form">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p>Price: $XX.XX</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p>Price: $XX.XX</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products as necessary -->
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <p>No items in cart.</p>
+        <!-- Cart functionality to be implemented -->
+    </section>
+
+    <section id="order-form">
+        <h2>Order Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TechShop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
