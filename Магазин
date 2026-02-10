@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>TechShop — Інтернет-магазин</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>TechShop</h1>
+  <button class="cart-btn" onclick="toggleCart()">
+    🛒 Кошик (<span id="count">0</span>)
+  </button>
+</header>
+
+<main class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Ноутбук">
+    <h2>Ноутбук</h2>
+    <p>25 000 грн</p>
+    <button onclick="add('Ноутбук',25000)">Купити</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Смартфон">
+    <h2>Смартфон</h2>
+    <p>15 000 грн</p>
+    <button onclick="add('Смартфон',15000)">Купити</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/200" alt="Навушники">
+    <h2>Навушники</h2>
+    <p>3 000 грн</p>
+    <button onclick="add('Навушники',3000)">Купити</button>
+  </div>
+</main>
+
+<section id="cart" class="cart hidden">
+  <h2>Ваш кошик</h2>
+  <ul id="items"></ul>
+  <p><strong>Сума:</strong> <span id="total">0</span> грн</p>
+</section>
+
+<section class="order">
+  <h2>Оформлення замовлення</h2>
+  <form onsubmit="order(event)">
+    <input type="text" placeholder="Ваше ім'я" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Адреса доставки" required>
+    <button type="submit">Оформити замовлення</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 TechShop
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
